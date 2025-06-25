@@ -8,9 +8,13 @@ public interface ProductRepository {
 
     Product save(Product product);
 
-    List<Product> getAll();
+    //CRUD - Create, Read, Update, Delete
 
-    Product getById(Long id);
+    List<Product> findAll();
 
-    //TODO
+    Product findById(Long id);
+
+    boolean deleteById(Long id);
+
+    Product updateById(Product product);
 }

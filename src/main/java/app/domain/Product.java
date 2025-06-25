@@ -3,7 +3,7 @@ package app.domain;
 import java.util.Objects;
 
 public class Product {
-    private final Long id;
+    private Long id;
     private boolean isActive;
     private String name;
     private double price;
@@ -15,31 +15,42 @@ public class Product {
         this.price = price;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Long getId() {
+
         return id;
     }
 
     public boolean isActive() {
+
         return isActive;
     }
 
     public void setActive(boolean active) {
+
         isActive = active;
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public double getPrice() {
+
         return price;
     }
 
     public void setPrice(double price) {
+
         this.price = price;
     }
 
